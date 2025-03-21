@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <Header>
+        <nav class="bg-[#0f1111] flex justify-center h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-auto">
+            <!-- logo -->
+            <a href="#"
+                class="border border-transparent hover:border-white flex justify-center items-center w-auto h-auto p-1 ">
+                <img src="./picture/amazon-logo.png" alt="" class="w-10 sm:w-14 md:w-20 lg:w-24 xl:w-28 ">
+            </a>
+
+            <!-- location -->
+            <a href="#"
+                class="text-white border border-transparent hover:border-white text-center h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 ">
+                <div
+                    class="h-4 w-10 sm:h-7 sm:w-16 md:h-9 md:w-18 lg:h-11 lg:w-20 xl:h-13 xl:w-24 flex flex-col justify-center items-center">
+                    <p class="text-[0.2rem] sm:text-[0.5rem] md:text-[0.55rem] xl:text-[0.7rem]">Deliver to</p>
+                    <div
+                        class="flex justify-center items-center gap-0 text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="font-bold sm:pl-[2px]"> India</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- search bar -->
+            <div class="h-auto flex items-center">
+                <div class=" border border-transparent flex hover:border-[#fcb558] hover:border-4 hover:rounded-xl">
+                    <select
+                        class="h-3 sm:h-5 md:h-6 lg:h-7 xl:h-9 w-4 sm:w-5 md:w-8 lg:w-12 xl:w-14 appearance-none border border-r-gray-400 rounded-s-md text-center text-[.5rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base">
+                        <option value="">All</option>
+                    </select>
+                    <input type="text" placeholder="Search"
+                        class="flex flex-grow h-3 sm:h-5 md:h-6 lg:h-7 xl:h-9 w-[16vw] min-[410px]:w-[24vw] sm:w-[30vw] md:w-[40vw] lg:w-[42vw] xl:w-[46vw] text-[.5rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base focus:outline-none">
+                    <div
+                        class="flex justify-center items-center border border-none rounded-e-md bg-[#fcb558] h-3 sm:h-5 md:h-6 lg:h-7 xl:h-9 w-4 sm:w-7 md:w-9 lg:w-11 xl:w-14">
+                        <i
+                            class="fa-solid fa-magnifying-glass text-[0.4rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-base"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--  language -->
+            <a href="#"
+                class="border border-transparent hover:border-white flex justify-center items-center text-white h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 ">
+                <img src="./picture/english.png" class="h-2 sm:h-4 sm:ml-2 ">
+                <p class="mx-1 text-[0.4rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-base">EN</p>
+                <i
+                    class="fa-solid fa-caret-down text-[0.4rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-base sm:mr-1"></i>
+            </a>
+
+            <!-- Account  -->
+            <a href=""
+                class="border border-transparent hover:border-white text-white flex flex-col justify-center items-center h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-14 sm:w-24 md:w-28 lg:w-28 xl:w-32">
+                <p class="text-[0.2rem] sm:text-[0.5rem] md:text-[0.55rem] xl:text-[0.7rem]">Hello, Sign in</p>
+                <div class="flex justify-center text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base">
+                    <p class=" ">Account & list </p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </a>
+
+            <!-- order & returns -->
+            <a href=""
+                class="border border-transparent hover:border-white text-white flex flex-col justify-center items-center h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-10 sm:w-16 md:w-20 lg:w-24">
+                <p class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base">Return</p>
+                <p class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] xl:text-base">& Order</p>
+            </a>
+
+            <!-- cart  -->
+            <a href=""
+                class="border border-transparent hover:border-white flex justify-center items-center h-5 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-9 sm:w-16 md:w-20">
+                <i
+                    class="fa-solid fa-cart-shopping text-white text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg::text-base"></i>
+                <p class="text-white text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-base">Cart</p>
+            </a>
+        </nav>
+
+        <div class="bg-[#232F3E] text-white h-3 sm:h-5 md:h-7 lg:h-8 xl:h-9 w-auto flex ">
+            <div
+                class=" border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-5 sm:w-10 md:w-12 lg:w-14 xl:w-16">
+                <i class="fa-solid fa-bars text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]"></i>
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">All</a>
+            </div>
+            <div
+                class="border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-11 sm:w-20 md:w-24 lg:w-32 xl:w-36">
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">Today's Deals</a>
+            </div>
+            <div
+                class="border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-14 sm:w-[6.5rem] md:w-32 lg:w-40 xl:w-44">
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">Coustomer
+                    Service</a>
+            </div>
+            <div
+                class="border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-7 sm:w-10 md:w-14 lg:w-16 xl:w-20">
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">Registry</a>
+            </div>
+            <div
+                class="border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-8 sm:w-16 md:w-20 lg:w-24 xl:w-28">
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">Gift Cards</a>
+            </div>
+            <div
+                class="border border-transparent hover:border-white flex justify-center items-center md:gap-1 w-4 sm:w-8 md:w-10 lg:w-12 xl:w-14">
+                <a href="#" class="text-[.35rem] sm:text-[0.7rem] md:text-[.9rem] lg:text-[1.1rem]">Sell</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
