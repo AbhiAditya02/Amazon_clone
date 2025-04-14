@@ -347,7 +347,7 @@ button,
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
-  appearance: button;
+  -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -394,7 +394,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -532,7 +532,7 @@ audio,
 iframe,
 embed,
 object {
-  display:inline-block;
+  display: block;
   /* 1 */
   vertical-align: middle;
   /* 2 */
@@ -562,21 +562,57 @@ video {
   position: relative;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-\[-40vh\] {
+  top: -40vh;
 }
 
 .top-\[42\%\] {
   top: 42%;
 }
 
+.top-\[60\%\] {
+  top: 60%;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mr-\[2px\] {
@@ -585,6 +621,14 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-2 {
@@ -599,16 +643,48 @@ video {
   height: 1rem;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-5 {
   height: 1.25rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-\[350px\] {
+  height: 350px;
 }
 
 .h-\[42\%\] {
   height: 42%;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
 .h-\[8\%\] {
   height: 8%;
+}
+
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[90\%\] {
+  height: 90%;
 }
 
 .h-auto {
@@ -655,6 +731,10 @@ video {
   width: 16vw;
 }
 
+.w-\[48\%\] {
+  width: 48%;
+}
+
 .w-\[95\%\] {
   width: 95%;
 }
@@ -663,14 +743,34 @@ video {
   width: auto;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -693,8 +793,16 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-0 {
   gap: 0px;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .rounded-e-md {
@@ -739,6 +847,16 @@ video {
   background-color: rgb(252 181 88 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -748,12 +866,29 @@ video {
   padding: 0.25rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-\[1px\] {
   padding-top: 1px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-\[\.29rem\] {
+  font-size: .29rem;
 }
 
 .text-\[\.35rem\] {
@@ -772,9 +907,9 @@ video {
   font-size: 0.4rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -782,44 +917,12 @@ video {
   line-height: 1rem;
 }
 
-.text-\[\.4rem\] {
-  font-size: .4rem;
-}
-
-.text-\[\.15rem\] {
-  font-size: .15rem;
-}
-
-.text-\[\.2rem\] {
-  font-size: .2rem;
-}
-
-.text-\[\.25rem\] {
-  font-size: .25rem;
-}
-
-.text-\[\.3rem\] {
-  font-size: .3rem;
-}
-
-.text-\[\.27rem\] {
-  font-size: .27rem;
-}
-
-.text-\[\.28rem\] {
-  font-size: .28rem;
-}
-
-.text-\[\.29rem\] {
-  font-size: .29rem;
-}
-
-.text-\[\.285rem\] {
-  font-size: .285rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-\[\#2162a1\] {
@@ -832,16 +935,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
-.underline-offset-2 {
-  text-underline-offset: 2px;
-}
-
-.underline-offset-1 {
-  text-underline-offset: 1px;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 .hover\:rounded-xl:hover {
@@ -860,10 +955,6 @@ video {
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.hover\:underline-offset-1:hover {
-  text-underline-offset: 1px;
 }
 
 .hover\:underline-offset-2:hover {
@@ -950,6 +1041,10 @@ video {
     padding-left: 2px;
   }
 
+  .sm\:text-\[\.65rem\] {
+    font-size: .65rem;
+  }
+
   .sm\:text-\[0\.4rem\] {
     font-size: 0.4rem;
   }
@@ -969,27 +1064,6 @@ video {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .sm\:text-\[\.6rem\] {
-    font-size: .6rem;
-  }
-
-  .sm\:text-\[\.7rem\] {
-    font-size: .7rem;
-  }
-
-  .sm\:text-\[\.65rem\] {
-    font-size: .65rem;
-  }
-
-  .sm\:text-\[6\] {
-    color: 6;
   }
 }
 
@@ -1070,27 +1144,8 @@ video {
     font-size: 0.5rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .md\:text-\[0\.7rem\] {
     font-size: 0.7rem;
-  }
-
-  .md\:text-\[0\.7\] {
-    color: 0.7;
   }
 }
 
@@ -1156,6 +1211,10 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+
   .lg\:text-\[1\.1rem\] {
     font-size: 1.1rem;
   }
@@ -1163,27 +1222,6 @@ video {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-\[0\.8rem\] {
-    font-size: 0.8rem;
-  }
-
-  @media (min-width: 1280px) {
-    .lg\:xl\:text-base {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
   }
 }
 
